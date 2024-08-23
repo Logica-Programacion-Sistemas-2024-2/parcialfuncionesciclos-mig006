@@ -26,7 +26,7 @@ public class App {
                 tasa = 0;
                 tasa2 = 0;
             }
-            return (avaluo*tasa)+(avaluo*tasa2);
+            return (int)(avaluo*tasa)+(avaluo*tasa2);
         } catch (Exception e) {
             return -1;
         }
@@ -42,7 +42,7 @@ public class App {
             int cantidadVehiculos = 0;
             
             // Datos de salida
-            double valorFinal = 0;
+            int valorFinal = 0;
 
             // Proceso
             System.out.println("Bienvenido a la oficina de Impuestos");
@@ -65,7 +65,7 @@ public class App {
                     break;
                 }
 
-                valorFinal = calcularTotalImpuestos(modelo, avaluo);
+                valorFinal = (int)calcularTotalImpuestos(modelo, avaluo);
         
                 System.out.println(" ");
                 System.out.println("Decada del modelo: "+modelo);
